@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Isometric Contributions Plus",
+  "version": "1.0.0",
+  "description": "GitCode 与 GitHub 贡献图上提供 3D 等距像素视图、2D/3D 与中英文切换。其他平台正在建设中",
+  "content_scripts": [
+    {
+      "css": ["iso.css"],
+      "js": ["obelisk.min.js", "iso.js"],
+      "matches": ["https://gitcode.com/*"]
+    },
+    {
+      "css": ["github/iso.css"],
+      "js": ["obelisk.min.js", "github/iso.js"],
+      "matches": ["https://github.com/*"]
+    }
+  ],
+  "permissions": ["storage", "cookies"],
+  "host_permissions": ["https://gitcode.com/*", "https://web-api.gitcode.com/*"],
+  "icons": {
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  }
+  ,
+  "action": {
+    "default_popup": "popup/popup.html"
+  }
+  ,
+  "background": {
+    "service_worker": "background.js"
+  }
+}

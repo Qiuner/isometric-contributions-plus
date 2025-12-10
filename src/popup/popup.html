@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>设置</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>语言</h1>
+      <div class="row">
+        <label class="radio"><input type="radio" name="lang" value="zh" />中文</label>
+        <label class="radio"><input type="radio" name="lang" value="en" />English</label>
+      </div>
+      <h1>柱体配色</h1>
+      <div class="row palette-row">
+        <label class="color"><input type="color" id="clr1" /></label>
+        <label class="color"><input type="color" id="clr2" /></label>
+        <label class="color"><input type="color" id="clr3" /></label>
+        <label class="color"><input type="color" id="clr4" /></label>
+      </div>
+      <div class="row btn-row">
+        <button id="applyColors">应用</button>
+        <button id="resetColors">恢复默认</button>
+      </div>
+      <div id="status" class="status"></div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+  </html>

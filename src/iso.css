@@ -1,0 +1,22 @@
+.ic-squares #isometric-contributions,
+.ic-squares .ic-contributions-wrapper {
+  display: none;
+}
+
+.ic-contributions-wrapper {
+  pointer-events: none;
+}
+
+#isometric-contributions {
+  pointer-events: none;
+}
+
+.ic-cubes #userActive {
+  display: none !important;
+}
+
+.ic-palette-select {
+  width: 140px;
+  text-align-last: right;
+  padding-right: 20px;
+}

@@ -1,0 +1,12 @@
+isometric-contributions.zip
+.DS_Store
+*.un~
+node_modules
+.direnv
+.envrc
+src/Archive.zip
+.do_tasks
+dist
+.parcel-cache
+.claude
+docs/INDEX.md

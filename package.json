@@ -1,0 +1,55 @@
+{
+  "type": "module",
+  "engines": {
+    "node": ">=22.0"
+  },
+  "scripts": {
+    "start": "parcel watch src/manifest.json --host localhost",
+    "build": "parcel build src/manifest.json --no-scope-hoist",
+    "test": "xo",
+    "release": "release:*",
+    "release:ff": "npx web-ext-submit --source-dir src",
+    "release:chrome": "npx webstore upload --source=isometric-contributions.zip --auto-publish"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.16.1",
+    "@parcel/reporter-bundle-analyzer": "^2.16.1",
+    "@parcel/reporter-bundle-buddy": "^2.16.1",
+    "chrome-webstore-upload-cli": "^3.5.0",
+    "parcel": "^2.16.1",
+    "web-ext-submit": "^7.8.0",
+    "xo": "^1.2.3"
+  },
+  "xo": {
+    "prettier": true,
+    "semicolon": false,
+    "space": true,
+    "languageOptions": {
+      "globals": {
+        "obelisk": "readonly",
+        "chrome": "readonly",
+        "document": "readonly",
+        "localStorage": "readonly", 
+        "getComputedStyle": "readonly",
+        "MutationObserver": "readonly",
+        "location": "readonly"
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "rules": {
+      "unicorn/prefer-top-level-await": 0,
+      "n/no-unsupported-features/node-builtins": "off"
+    }
+  },
+  "targets": {
+    "default": {
+      "engines": {
+        "browsers": ">= 50%"
+      }
+    }
+  }
+}
