@@ -25,7 +25,7 @@
 
 ## 安装
 
-- 使用说明视频：
+- 使用说明视频：https://www.bilibili.com/video/BV1eGmbB9Ew2/?spm_id_from=333.1387.homepage.video_card.click
 
 - Chrome/Brave/Edge：打开扩展管理页面，开启“开发者模式”，点击“加载已解压的扩展程序”，选择 `src` 目录
 

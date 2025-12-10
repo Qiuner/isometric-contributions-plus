@@ -25,7 +25,7 @@ This browser extension supports GitCode and GitHub. It adds a 3D isometric view 
 
 ## Installation
 
-- Tutorial video:
+- Tutorial video:https://www.bilibili.com/video/BV1eGmbB9Ew2/?spm_id_from=333.1387.homepage.video_card.click
 
 - Chrome/Brave/Edge: open the extensions page, enable “Developer mode”, click “Load unpacked”, and select the `src` directory
 
